@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "Vms_app1" {
-  source = "git::https://github.com/Vishwanathms/tf-aws-modules-jan26.git//ec2-instance?ref=main"
+  source = "git::https://github.com/gregoryjohnmerta-coder/terraform-lab-modules?ref=main"
   region-1 = "ap-south-1"
   instance_type = "t3.micro"
   subnets = ["subnet-0a413d769fe98ba0b", "subnet-043f1f8151b681cca", "subnet-04f47a3252bdf06e6"]
